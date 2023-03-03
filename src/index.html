@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Awesome Capacitor App</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <label for="desired-orientation">Desired orientation</label>
+      <select id="desired-orientation">
+        <option value="any">any</option>
+        <option value="natural">natural</option>
+        <option value="landscape">landscape</option>
+        <option value="portrait">portrait</option>
+        <option value="portrait-primary">portrait-primary</option>
+        <option value="portrait-secondary">portrait-secondary</option>
+        <option value="landscape-primary">landscape-primary</option>
+        <option value="landscape-secondary">landscape-secondary</option>
+      </select>
+      <button id="lock">Lock</button>
+      <button id="unlock">Unlock</button>
+      <button id="get-current-orientation">Query current orientation</button>
+      <div>
+        <span>Last orientation query result:</span>
+        <span id="current-orientation"></span>
+      </div>
+      <div>
+        <span>Last orientation change event:</span>
+        <span id="last-orientation-change-event"></span>
+      </div>
+    </div>
+
+    <script src="./js/main.ts" type="module"></script>
+  </body>
+</html>

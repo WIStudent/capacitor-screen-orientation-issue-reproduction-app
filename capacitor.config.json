@@ -1,0 +1,11 @@
+{
+  "appId": "de.tobiastrumm.capacitorscreenorientationissuereproductionapp",
+  "appName": "capacitor-screen-orientation-issue-reproduction-app",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
